@@ -1,0 +1,8 @@
+#Path automation-tools
+/usr/lib/archivematica
+
+#Path transfer-source-helpers
+/opt/archivematica/
+
+#Path dspace-transfer.src.conf
+/etc/archivematica/automation-tools/

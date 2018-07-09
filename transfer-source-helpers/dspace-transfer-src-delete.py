@@ -9,7 +9,7 @@ from __future__ import print_function
 import argparse
 import logging
 import logging.config
-import ConfigParser
+import configparser
 import re
 import os
 import shutil
@@ -20,7 +20,7 @@ LOGGER = logging.getLogger(__name__)
 
 
 def parse_config_file(conffile):
-    cparser = ConfigParser.RawConfigParser()
+    cparser = configparser.RawConfigParser()
     cparser.read(conffile)
     global LOGFILE, LOGLEVEL, PIDFILE, AUTOMATION_TOOLS_DB_FILE, TRANSFER_SOURCE_DIR
     section = 'dspace_delete'
@@ -125,7 +125,10 @@ def main(arguments):
             path_to_delete = os.path.join(TRANSFER_SOURCE_DIR, a)
             LOGGER.info("Deleting {} from TS location".format(path_to_delete))
             # note that item to delete is a directory
+            print(path_to_delete)
             shutil.rmtree(path_to_delete)
+            os.remove(PIDFILE)
+            return 1
 
     os.remove(PIDFILE)
     return 0

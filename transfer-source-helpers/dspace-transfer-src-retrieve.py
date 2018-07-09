@@ -6,7 +6,7 @@
 
 from __future__ import print_function
 import argparse
-import ConfigParser
+import configparser
 import datetime
 import logging
 import logging.config
@@ -25,6 +25,8 @@ Base = declarative_base()
 
 # sqlalchemy table definition
 class Item(Base):
+    # print(Base)
+    # print("Hola--------------------------------------------------------------------")
     __tablename__ = 'items'
     id = sqlalchemy.Column(sqlalchemy.Integer, sqlalchemy.Sequence('user_id_seq'), primary_key=True)
     path = sqlalchemy.Column(sqlalchemy.Binary())
@@ -36,7 +38,7 @@ class Item(Base):
 
 
 def parse_config_file(conffile):
-    cparser = ConfigParser.RawConfigParser()
+    cparser = configparser.RawConfigParser()
     cparser.read(conffile)
     global RSYNC_PASSWORD, RSYNC_PATH, LOGFILE, LOGLEVEL, PIDFILE, DATABASE_FILE, TRANSFER_SOURCE_DIR
     section = 'dspace_retrieve'
@@ -82,8 +84,17 @@ def get_dspace_available_items():
         # -rw-r--r--     10,333,444 2016/11/29 16:20:38 ITEM@2429-10003.zip
 
         regex = r'^(?P<type>.)(?P<permissions>.{9}) +(?P<size>[\d,]+) (?P<timestamp>..../../.. ..:..:..) (?P<name>.*)$'
+        # print(output)
+        # for e in output:
+        #   print(e)
+        #   print(type(e))
+        #   aux = e.decode()
+        #   print(aux)
+        #   print(type(aux))
+        noutput = [aux.decode('utf-8') for aux in output]
+        print(noutput)
         p = re.compile(regex)
-        matches = [p.match(e) for e in output]
+        matches = [p.match(e) for e in noutput]
         # First get list of files, items whose type (first char in each line output) is '-'
         files = [e.group('name') for e in matches
                  if e and e.group('name') != '.' and e.group('type') == '-']
@@ -105,7 +116,7 @@ def get_retrieved_items(session):
     uploaded_items = session.query(Item).filter_by(ignore=False)
     uploaded_set = set()
     for i in uploaded_items:
-        uploaded_set.add(i.path)
+        uploaded_set.add(i.path.decode('ascii'))
 
     return uploaded_set
 
@@ -233,6 +244,9 @@ def main(arguments):
         LOGGER.info('len(uploaded_list): %s', len(uploaded_list))
 
         # check pending items
+        LOGGER.info('---------------------------')
+        LOGGER.info(uploaded_set)
+        LOGGER.info(available_set)
         pending_set = available_set - uploaded_set
         pending_list = sorted(pending_set)
         LOGGER.debug('pending list: %s', pending_list)
@@ -243,30 +257,36 @@ def main(arguments):
         if pending_list:    # do only when list not empty
             LOGGER.debug('Item to download/upload: %s', pending_list[0])
 
-            # copying the zip file to a directory (with the same name)
-            # (to replace the 00_file_to_folder.py script in automation tools)
+                # copying the zip file to a directory (with the same name)
+                # (to replace the 00_file_to_folder.py script in automation tools)
 
-            # first create temp dir (name starting with . so that automation tools can't see it yet
-            # and transfers do not start by accident if the script was called by crontab for example)
+                # first create temp dir (name starting with . so that automation tools can't see it yet
+                # and transfers do not start by accident if the script was called by crontab for example)
             temp_transfer_full_path = os.path.join(TRANSFER_SOURCE_DIR, "." + pending_list[0])
             if not os.path.exists(temp_transfer_full_path):
                 LOGGER.debug('Creating directory: {}'.format(temp_transfer_full_path))
                 os.mkdir(temp_transfer_full_path)
 
-            # upload dspace zip to the temp dir
+                # upload dspace zip to the temp dir
             commstr = 'rsync -a {}{} {}'.format(RSYNC_PATH, pending_list[0], temp_transfer_full_path)
             LOGGER.debug('rsync command: {}'.format(commstr))
             env = os.environ.copy()
             env['RSYNC_PASSWORD'] = RSYNC_PASSWORD
             subprocess.check_call(shlex.split(commstr), env=env)
 
-            # done with the copy, now rename the temp directory (same name as zip file)
+                # done with the copy, now rename the temp directory (same name as zip file)
             transfer_full_path = os.path.join(TRANSFER_SOURCE_DIR, pending_list[0])
             os.rename(temp_transfer_full_path, transfer_full_path)
 
-            # add an entry to the uploaded table of the database
-            add_retrieved_item(session, pending_list[0], datetime.datetime.utcnow())
+                # add an entry to the uploaded table of the database
+            print(pending_list[0])
+            aux = str.encode(pending_list[0])
+            add_retrieved_item(session, aux, datetime.datetime.utcnow())
             LOGGER.info("{} added to retrieved items table".format(pending_list[0]))
+        else:
+            session.close()
+            os.remove(PIDFILE)
+            return 1
 
         session.close()
         os.remove(PIDFILE)

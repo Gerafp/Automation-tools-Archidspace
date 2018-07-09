@@ -3,7 +3,6 @@
 
 """
 Automate Transfers.
-
 Helper script to automate running transfers through Archivematica.
 """
 
@@ -51,7 +50,6 @@ def get_status(am_url, am_user, am_api_key, ss_url, ss_user, ss_api_key,
                delete_on_complete=False):
     """
     Get status of the SIP or Transfer with unit_uuid.
-
     :param str unit_uuid: UUID of the unit to query for.
     :param str unit_type: 'ingest' or 'transfer'
     :param bool hide_on_complete: Hide the unit in the dashboard if COMPLETE
@@ -130,11 +128,9 @@ def get_status(am_url, am_user, am_api_key, ss_url, ss_user, ss_api_key,
 def get_accession_id(dirname):
     """
     Call get-accession-number and return literal_eval stdout as accession ID.
-
     get-accession-number should be in the same directory as transfer.py. Its
     only output to stdout should be the accession number surrounded by
     quotes.  Eg. "accession number"
-
     :param str dirname: Directory name of folder to become transfer
     :returns: accession number or None.
     """
@@ -163,7 +159,6 @@ def get_accession_id(dirname):
 def run_scripts(directory, config_file, *args):
     """
     Run all executable scripts in directory relative to this file.
-
     :param str directory: Dir in the same folder as this file to run scripts
     :param args: All other parameters will be passed to called scripts.
     :return: None
@@ -207,7 +202,6 @@ def get_next_transfer(ss_url, ss_user, ss_api_key, ts_location_uuid,
     """
     Helper to find the first directory that doesn't have an associated
     transfer.
-
     :param ss_url:           URL of the Storage Sevice to query
     :param ss_user:          User on the Storage Service for authentication
     :param ss_api_key:       API key for user on the Storage Service for
@@ -280,7 +274,6 @@ def start_transfer(ss_url, ss_user, ss_api_key, ts_location_uuid, ts_path,
                    see_files, session, config_file):
     """
     Starts a new transfer.
-
     :param ss_url: URL of the Storage Sevice to query
     :param ss_user: User on the Storage Service for authentication
     :param ss_api_key: API key for user on the Storage Service for
@@ -381,7 +374,6 @@ def start_transfer(ss_url, ss_user, ss_api_key, ts_location_uuid, ts_path,
 def approve_transfer(dirname, url, am_api_key, am_user):
     """
     Approve transfer with dirname.
-
     :returns: UUID of the approved transfer or None.
     """
     LOGGER.info("Approving %s", dirname)
@@ -533,4 +525,4 @@ if __name__ == '__main__':
         delete_on_complete=args.delete_on_complete,
         config_file=args.config_file,
         log_level=log_level,
-    ))
+))

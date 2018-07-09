@@ -1,0 +1,44 @@
+INFO      2018-07-09 10:25:08 transfer.py:359  New transfer: <Unit(id=None, uuid=18e452dd-2cce-49aa-9826-652b010aff34, unit_type=transfer, path=b'ITEM@123456789-12.zip', status=None, current=True)>
+INFO      2018-07-09 10:25:08 transfer.py:370  Finished b'ITEM@123456789-12.zip'
+INFO      2018-07-09 10:25:39 transfer.py:418  Waking up
+INFO      2018-07-09 10:25:39 transfer.py:454  Current unit: <Unit(id=2, uuid=18e452dd-2cce-49aa-9826-652b010aff34, unit_type=transfer, path=b'ITEM@123456789-12.zip', status=None, current=True)>
+INFO      2018-07-09 10:25:39 transfer.py:81   18e452dd-2cce-49aa-9826-652b010aff34 is a complete transfer, fetching SIP aa6d0b79-6876-438c-9a5a-ee518cb69941 status.
+INFO      2018-07-09 10:25:39 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-12.zip', 'microservice': 'Set file permissions', 'directory': 'ITEM_123456789-12.zip-aa6d0b79-6876-438c-9a5a-ee518cb69941', 'path': '/var/archivematica/sharedDirectory/currentlyProcessing/ITEM_123456789-12.zip-aa6d0b79-6876-438c-9a5a-ee518cb69941/', 'message': 'Fetched status for aa6d0b79-6876-438c-9a5a-ee518cb69941 successfully.', 'type': 'SIP', 'uuid': 'aa6d0b79-6876-438c-9a5a-ee518cb69941'}
+INFO      2018-07-09 10:25:39 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2018-07-09 10:26:09 transfer.py:418  Waking up
+INFO      2018-07-09 10:26:09 transfer.py:454  Current unit: <Unit(id=2, uuid=aa6d0b79-6876-438c-9a5a-ee518cb69941, unit_type=ingest, path=b'ITEM@123456789-12.zip', status=PROCESSING, current=True)>
+INFO      2018-07-09 10:26:09 transfer.py:459  Status info: {'status': 'COMPLETE', 'name': 'ITEM_123456789-12.zip', 'microservice': 'Remove the processing directory', 'directory': 'ITEM_123456789-12.zip-aa6d0b79-6876-438c-9a5a-ee518cb69941', 'path': '/var/archivematica/sharedDirectory/currentlyProcessing/ITEM_123456789-12.zip-aa6d0b79-6876-438c-9a5a-ee518cb69941/', 'message': 'Fetched status for aa6d0b79-6876-438c-9a5a-ee518cb69941 successfully.', 'type': 'SIP', 'uuid': 'aa6d0b79-6876-438c-9a5a-ee518cb69941'}
+INFO      2018-07-09 10:26:09 transfer.py:256  All potential transfers in b'' have been created.
+WARNING   2018-07-09 10:26:09 transfer.py:302  All potential transfers in b'' have been created. Exiting
+INFO      2018-07-09 10:26:10 transfer.py:418  Waking up
+INFO      2018-07-09 10:26:10 transfer.py:451  Current unit: unknown.  Assuming new run.
+INFO      2018-07-09 10:26:10 transfer.py:304  Starting with b'ITEM@123456789-8.zip'
+INFO      2018-07-09 10:26:10 transfer.py:307  Accession ID: None
+INFO      2018-07-09 10:26:10 transfer.py:182  /usr/lib/archivematica/automation-tools/transfers/pre-transfer/.gitignore is not executable, skipping
+INFO      2018-07-09 10:26:10 transfer.py:189  Running /usr/lib/archivematica/automation-tools/transfers/pre-transfer/add_metadata_dspace "/var/archivematica/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-8.zip/" "standard"
+INFO      2018-07-09 10:26:10 transfer.py:194  Return code: 0
+INFO      2018-07-09 10:26:10 transfer.py:195  stdout: b'Identifier:  123456789/8'
+INFO      2018-07-09 10:26:10 transfer.py:182  /usr/lib/archivematica/automation-tools/transfers/pre-transfer/defaultProcessingMCP.xml is not executable, skipping
+INFO      2018-07-09 10:26:10 transfer.py:189  Running /usr/lib/archivematica/automation-tools/transfers/pre-transfer/default_config "/var/archivematica/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-8.zip/" "standard"
+INFO      2018-07-09 10:26:10 transfer.py:194  Return code: 0
+INFO      2018-07-09 10:26:10 transfer.py:195  stdout: b'copying new processingMCP to /var/archivematica/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-8.zip/\n'
+INFO      2018-07-09 10:26:10 transfer.py:350  Ready to start
+INFO      2018-07-09 10:26:10 transfer.py:379  Approving b'ITEM@123456789-8.zip'
+INFO      2018-07-09 10:26:16 transfer.py:399  Found waiting transfer: ITEM@123456789-8.zip
+INFO      2018-07-09 10:26:16 transfer.py:356  Approved 2bb19751-1492-40e8-ae14-5567057b3cf5
+INFO      2018-07-09 10:26:16 transfer.py:359  New transfer: <Unit(id=None, uuid=2bb19751-1492-40e8-ae14-5567057b3cf5, unit_type=transfer, path=b'ITEM@123456789-8.zip', status=None, current=True)>
+INFO      2018-07-09 10:26:16 transfer.py:370  Finished b'ITEM@123456789-8.zip'
+INFO      2018-07-09 10:26:47 transfer.py:418  Waking up
+INFO      2018-07-09 10:26:47 transfer.py:454  Current unit: <Unit(id=3, uuid=2bb19751-1492-40e8-ae14-5567057b3cf5, unit_type=transfer, path=b'ITEM@123456789-8.zip', status=None, current=True)>
+INFO      2018-07-09 10:26:47 transfer.py:81   2bb19751-1492-40e8-ae14-5567057b3cf5 is a complete transfer, fetching SIP 3bac05f0-3b93-4550-8adc-49459c22642e status.
+INFO      2018-07-09 10:26:47 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-8.zip', 'microservice': 'Check for Access directory', 'directory': 'ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e', 'path': '/var/archivematica/sharedDirectory/currentlyProcessing/ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e/', 'message': 'Fetched status for 3bac05f0-3b93-4550-8adc-49459c22642e successfully.', 'type': 'SIP', 'uuid': '3bac05f0-3b93-4550-8adc-49459c22642e'}
+INFO      2018-07-09 10:26:47 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2018-07-09 10:27:17 transfer.py:418  Waking up
+INFO      2018-07-09 10:27:18 transfer.py:454  Current unit: <Unit(id=3, uuid=3bac05f0-3b93-4550-8adc-49459c22642e, unit_type=ingest, path=b'ITEM@123456789-8.zip', status=PROCESSING, current=True)>
+INFO      2018-07-09 10:27:18 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-8.zip', 'microservice': 'Verify AIP', 'directory': 'ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e', 'path': '/var/archivematica/sharedDirectory/currentlyProcessing/ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e/', 'message': 'Fetched status for 3bac05f0-3b93-4550-8adc-49459c22642e successfully.', 'type': 'SIP', 'uuid': '3bac05f0-3b93-4550-8adc-49459c22642e'}
+INFO      2018-07-09 10:27:18 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2018-07-09 10:27:48 transfer.py:418  Waking up
+INFO      2018-07-09 10:27:48 transfer.py:454  Current unit: <Unit(id=3, uuid=3bac05f0-3b93-4550-8adc-49459c22642e, unit_type=ingest, path=b'ITEM@123456789-8.zip', status=PROCESSING, current=True)>
+INFO      2018-07-09 10:27:48 transfer.py:459  Status info: {'status': 'COMPLETE', 'name': 'ITEM_123456789-8.zip', 'microservice': 'Remove the processing directory', 'directory': 'ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e', 'path': '/var/archivematica/sharedDirectory/currentlyProcessing/ITEM_123456789-8.zip-3bac05f0-3b93-4550-8adc-49459c22642e/', 'message': 'Fetched status for 3bac05f0-3b93-4550-8adc-49459c22642e successfully.', 'type': 'SIP', 'uuid': '3bac05f0-3b93-4550-8adc-49459c22642e'}
+INFO      2018-07-09 10:27:48 transfer.py:256  All potential transfers in b'' have been created.
+WARNING   2018-07-09 10:27:48 transfer.py:302  All potential transfers in b'' have been created. Exiting
