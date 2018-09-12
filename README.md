@@ -1,6 +1,6 @@
 # Automation-tools-Archidspace
 
-Adatación de las automation-tools para autodepositos en archivematica desde DSpace.
+Adaptación de las automation-tools para autodepositos en archivematica desde DSpace.
 Se realizó la comprobación con los siguientes paths del sistema.
 
 #Path automation-tools
