@@ -1,0 +1,58 @@
+INFO      2019-04-10 23:03:51 transfer.py:194  Return code: 0
+INFO      2019-04-10 23:03:51 transfer.py:195  stdout: b'copying new processingMCP to /preserva/preservacion/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@11191-99280219.zip/\n'
+INFO      2019-04-10 23:03:51 transfer.py:350  Ready to start
+INFO      2019-04-10 23:03:51 transfer.py:379  Approving b'ITEM@11191-99280219.zip'
+INFO      2019-04-10 23:03:57 transfer.py:399  Found waiting transfer: ITEM@11191-99280219.zip
+INFO      2019-04-10 23:03:57 transfer.py:356  Approved 71f5df83-1663-4d64-a678-6af0533722bf
+INFO      2019-04-10 23:03:57 transfer.py:359  New transfer: <Unit(id=None, uuid=71f5df83-1663-4d64-a678-6af0533722bf, unit_type=transfer, path=b'ITEM@11191-99280219.zip', status=None, current=True)>
+INFO      2019-04-10 23:03:57 transfer.py:370  Finished b'ITEM@11191-99280219.zip'
+INFO      2019-04-10 23:04:27 transfer.py:418  Waking up
+INFO      2019-04-10 23:04:27 transfer.py:454  Current unit: <Unit(id=5402, uuid=71f5df83-1663-4d64-a678-6af0533722bf, unit_type=transfer, path=b'ITEM@11191-99280219.zip', status=None, current=True)>
+INFO      2019-04-10 23:04:27 transfer.py:81   71f5df83-1663-4d64-a678-6af0533722bf is a complete transfer, fetching SIP 266b4432-6505-4c42-ab24-49b87c823f20 status.
+INFO      2019-04-10 23:04:27 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_11191-99280219.zip', 'microservice': 'Set file permissions', 'directory': 'ITEM_11191-99280219.zip', 'path': '/preserva/preservacion/sharedDirectory/watchedDirectories/system/autoProcessSIP/ITEM_11191-99280219.zip/', 'message': 'Fetched status for 266b4432-6505-4c42-ab24-49b87c823f20 successfully.', 'type': 'SIP', 'uuid': '266b4432-6505-4c42-ab24-49b87c823f20'}
+INFO      2019-04-10 23:04:27 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2019-04-10 23:04:58 transfer.py:418  Waking up
+INFO      2019-04-10 23:04:58 transfer.py:454  Current unit: <Unit(id=5402, uuid=266b4432-6505-4c42-ab24-49b87c823f20, unit_type=ingest, path=b'ITEM@11191-99280219.zip', status=PROCESSING, current=True)>
+INFO      2019-04-10 23:04:58 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_11191-99280219.zip', 'microservice': 'Scan for viruses in metadata', 'directory': 'ITEM_11191-99280219.zip-266b4432-6505-4c42-ab24-49b87c823f20', 'path': '/preserva/preservacion/sharedDirectory/watchedDirectories/workFlowDecisions/metadataReminder/ITEM_11191-99280219.zip-266b4432-6505-4c42-ab24-49b87c823f20/', 'message': 'Fetched status for 266b4432-6505-4c42-ab24-49b87c823f20 successfully.', 'type': 'SIP', 'uuid': '266b4432-6505-4c42-ab24-49b87c823f20'}
+INFO      2019-04-10 23:04:58 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2019-04-10 23:05:29 transfer.py:418  Waking up
+INFO      2019-04-10 23:05:29 transfer.py:454  Current unit: <Unit(id=5402, uuid=266b4432-6505-4c42-ab24-49b87c823f20, unit_type=ingest, path=b'ITEM@11191-99280219.zip', status=PROCESSING, current=True)>
+INFO      2019-04-10 23:05:29 transfer.py:459  Status info: {'status': 'COMPLETE', 'name': 'ITEM_11191-99280219.zip', 'microservice': 'Remove the processing directory', 'directory': 'ITEM_11191-99280219.zip-266b4432-6505-4c42-ab24-49b87c823f20', 'path': '/preserva/preservacion/sharedDirectory/currentlyProcessing/ITEM_11191-99280219.zip-266b4432-6505-4c42-ab24-49b87c823f20/', 'message': 'Fetched status for 266b4432-6505-4c42-ab24-49b87c823f20 successfully.', 'type': 'SIP', 'uuid': '266b4432-6505-4c42-ab24-49b87c823f20'}
+INFO      2019-04-10 23:05:29 transfer.py:256  All potential transfers in b'' have been created.
+WARNING   2019-04-10 23:05:29 transfer.py:302  All potential transfers in b'' have been created. Exiting
+INFO      2019-04-10 23:05:31 transfer.py:418  Waking up
+INFO      2019-04-10 23:05:31 transfer.py:451  Current unit: unknown.  Assuming new run.
+INFO      2019-04-10 23:05:31 transfer.py:304  Starting with b'ITEM@123456789-464280219.zip'
+INFO      2019-04-10 23:05:31 transfer.py:307  Accession ID: None
+INFO      2019-04-10 23:05:31 transfer.py:182  /home/cosei/Automation-tools-Archidspace-master/automation-tools/transfers/pre-transfer/.gitignore is not executable, skipping
+INFO      2019-04-10 23:05:31 transfer.py:189  Running /home/cosei/Automation-tools-Archidspace-master/automation-tools/transfers/pre-transfer/add_metadata_dspace "/preserva/preservacion/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-464280219.zip/" "standard"
+INFO      2019-04-10 23:05:31 transfer.py:194  Return code: 0
+INFO      2019-04-10 23:05:31 transfer.py:195  stdout: b'Identifier:  123456789/464280219'
+INFO      2019-04-10 23:05:31 transfer.py:182  /home/cosei/Automation-tools-Archidspace-master/automation-tools/transfers/pre-transfer/defaultProcessingMCP.xml is not executable, skipping
+INFO      2019-04-10 23:05:31 transfer.py:189  Running /home/cosei/Automation-tools-Archidspace-master/automation-tools/transfers/pre-transfer/default_config "/preserva/preservacion/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-464280219.zip/" "standard"
+INFO      2019-04-10 23:05:31 transfer.py:194  Return code: 0
+INFO      2019-04-10 23:05:31 transfer.py:195  stdout: b'copying new processingMCP to /preserva/preservacion/sharedDirectory/watchedDirectories/activeTransfers/Dspace/ITEM@123456789-464280219.zip/\n'
+INFO      2019-04-10 23:05:31 transfer.py:350  Ready to start
+INFO      2019-04-10 23:05:31 transfer.py:379  Approving b'ITEM@123456789-464280219.zip'
+INFO      2019-04-10 23:05:37 transfer.py:399  Found waiting transfer: ITEM@123456789-464280219.zip
+INFO      2019-04-10 23:05:37 transfer.py:356  Approved 6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0
+INFO      2019-04-10 23:05:37 transfer.py:359  New transfer: <Unit(id=None, uuid=6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0, unit_type=transfer, path=b'ITEM@123456789-464280219.zip', status=None, current=True)>
+INFO      2019-04-10 23:05:37 transfer.py:370  Finished b'ITEM@123456789-464280219.zip'
+INFO      2019-04-10 23:06:08 transfer.py:418  Waking up
+INFO      2019-04-10 23:06:08 transfer.py:454  Current unit: <Unit(id=5403, uuid=6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0, unit_type=transfer, path=b'ITEM@123456789-464280219.zip', status=None, current=True)>
+INFO      2019-04-10 23:06:08 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-464280219.zip', 'microservice': 'Move to examine contents', 'directory': 'ITEM_123456789-464280219.zip-6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0', 'path': '/preserva/preservacion/sharedDirectory/watchedDirectories/workFlowDecisions/examineContentsChoice/ITEM_123456789-464280219.zip-6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0/', 'message': 'Fetched status for 6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0 successfully.', 'type': 'transfer', 'uuid': '6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0'}
+INFO      2019-04-10 23:06:08 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2019-04-10 23:06:38 transfer.py:418  Waking up
+INFO      2019-04-10 23:06:38 transfer.py:454  Current unit: <Unit(id=5403, uuid=6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0, unit_type=transfer, path=b'ITEM@123456789-464280219.zip', status=PROCESSING, current=True)>
+INFO      2019-04-10 23:06:39 transfer.py:81   6e5f8ed5-ffa5-4504-adc2-251e99fbb0d0 is a complete transfer, fetching SIP 8b44cbb4-a9f4-4901-b170-02ebe6c01bc5 status.
+INFO      2019-04-10 23:06:39 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-464280219.zip', 'microservice': 'Scan for viruses in submission documentation', 'directory': 'ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5', 'path': '/preserva/preservacion/sharedDirectory/watchedDirectories/workFlowDecisions/metadataReminder/ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5/', 'message': 'Fetched status for 8b44cbb4-a9f4-4901-b170-02ebe6c01bc5 successfully.', 'type': 'SIP', 'uuid': '8b44cbb4-a9f4-4901-b170-02ebe6c01bc5'}
+INFO      2019-04-10 23:06:39 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2019-04-10 23:07:09 transfer.py:418  Waking up
+INFO      2019-04-10 23:07:09 transfer.py:454  Current unit: <Unit(id=5403, uuid=8b44cbb4-a9f4-4901-b170-02ebe6c01bc5, unit_type=ingest, path=b'ITEM@123456789-464280219.zip', status=PROCESSING, current=True)>
+INFO      2019-04-10 23:07:09 transfer.py:459  Status info: {'status': 'PROCESSING', 'name': 'ITEM_123456789-464280219.zip', 'microservice': 'Index AIP', 'directory': 'ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5', 'path': '/preserva/preservacion/sharedDirectory/currentlyProcessing/ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5/', 'message': 'Fetched status for 8b44cbb4-a9f4-4901-b170-02ebe6c01bc5 successfully.', 'type': 'SIP', 'uuid': '8b44cbb4-a9f4-4901-b170-02ebe6c01bc5'}
+INFO      2019-04-10 23:07:09 transfer.py:468  Current transfer still processing, nothing to do.
+INFO      2019-04-10 23:07:40 transfer.py:418  Waking up
+INFO      2019-04-10 23:07:40 transfer.py:454  Current unit: <Unit(id=5403, uuid=8b44cbb4-a9f4-4901-b170-02ebe6c01bc5, unit_type=ingest, path=b'ITEM@123456789-464280219.zip', status=PROCESSING, current=True)>
+INFO      2019-04-10 23:07:40 transfer.py:459  Status info: {'status': 'COMPLETE', 'name': 'ITEM_123456789-464280219.zip', 'microservice': 'Remove the processing directory', 'directory': 'ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5', 'path': '/preserva/preservacion/sharedDirectory/currentlyProcessing/ITEM_123456789-464280219.zip-8b44cbb4-a9f4-4901-b170-02ebe6c01bc5/', 'message': 'Fetched status for 8b44cbb4-a9f4-4901-b170-02ebe6c01bc5 successfully.', 'type': 'SIP', 'uuid': '8b44cbb4-a9f4-4901-b170-02ebe6c01bc5'}
+INFO      2019-04-10 23:07:40 transfer.py:256  All potential transfers in b'' have been created.
+WARNING   2019-04-10 23:07:40 transfer.py:302  All potential transfers in b'' have been created. Exiting

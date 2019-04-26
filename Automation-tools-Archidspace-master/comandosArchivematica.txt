@@ -1,0 +1,1000 @@
+ 1037  ls
+ 1038  ls -la
+ 1039  clear
+ 1040  ls
+ 1041  cd /var/lof
+ 1042  cd /var/log
+ 1043  ls
+ 1044  cd archivematica/
+ 1045  ls
+ 1046  cd dashboard/
+ 1047  ls
+ 1048  clear
+ 1049  ls
+ 1050  cat dashboard.debug.log
+ 1051  usermod -a -G www-data archivematica
+ 1052  clear
+ 1053  ls
+ 1054  date
+ 1055  cat dashboard.log
+ 1056  clear
+ 1057  shutdown -r now
+ 1058  clear
+ 1059  ls
+ 1060  cd /
+ 1061  ls
+ 1062  ls -la
+ 1063  cd preserva/
+ 1064  ls
+ 1065  cd preservacion/
+ 1066  ls
+ 1067  cd archivematicaWorfFlow/
+ 1068  ls
+ 1069  rm -rf sharedDirectory
+ 1070  tar -xzvf sharedDirectory.tar.gz
+ 1071  clear
+ 1072  ls
+ 1073  cd /home/cosei/
+ 1074  ls
+ 1075  cd Automation-tools-Archidspace-master/
+ 1076  ls
+ 1077  clear
+ 1078  ls
+ 1079  cd MaintenceScripts/
+ 1080  ls
+ 1081  clear
+ 1082  ls
+ 1083  cd ArchivematicaScripts/
+ 1084  ls
+ 1085  ./RestartServices.sh 
+ 1086  clear
+ 1087  ls
+ 1088  ./delete-registries.sh 
+ 1089  clear
+ 1090  cd ..
+ 1091  d ..
+ 1092  ls
+ 1093  cd ..
+ 1094  ls
+ 1095  rm myscript.log
+ 1096  ls
+ 1097  ls /preserva/preservacion/dspace_ready_to_ingest/
+ 1098  rm -rf /preserva/preservacion/dspace_ready_to_ingest/
+ 1099  ls
+ 1100  ls /preserva/preservacion/
+ 1101  ls
+ 1102  mkdir dspace_ready_to_ingest
+ 1103  ls
+ 1104  clear
+ 1105  ls
+ 1106  cd /preserva/preservacion/
+ 1107  ls
+ 1108  mkdir dspace_ready_to_ingest
+ 1109  ls
+ 1110  ls -la
+ 1111  cd ...
+ 1112  cd /home/
+ 1113  ls
+ 1114  cd cosei/
+ 1115  ls
+ 1116  clear
+ 1117  ls
+ 1118  h8istory
+ 1119  history
+ 1120  nohup /home/cosei/Automation-tools-Archidspace-master/DspaceArchi.sh >> /home/cosei/myscript.log 2>&1 &
+ 1121  ls
+ 1122  cat myscript.log
+ 1123  clear
+ 1124  ls
+ 1125  clear
+ 1126  ls
+ 1127  cd /var/log/archivematica/
+ 1128  ls
+ 1129  cd dashboard/
+ 1130  ls
+ 1131  cat dashboard.log 
+ 1132  cd /var/archivematica/sharedDirectory/tmp/tmpJGUoEv/
+ 1133  ls
+ 1134  clear
+ 1135  ls
+ 1136  pwd
+ 1137  ls
+ 1138  cd ..
+ 1139  ls
+ 1140  cd ..
+ 1141  ls
+ 1142  pwd
+ 1143  ls
+ 1144  cd sharedDirectory
+ 1145  ls
+ 1146  ls -la
+ 1147  cd ..
+ 1148  ls
+ 1149  cd sharedDirectory
+ 1150  ls
+ 1151  ls -la
+ 1152  cd th
+ 1153  cd tmp/
+ 1154  ls
+ 1155  cd ..
+ 1156  ls
+ 1157  cd tmp/
+ 1158  ls
+ 1159  cd tmpJGUoEv
+ 1160  ls
+ 1161  pwd
+ 1162  cd ..
+ 1163  ls
+ 1164  ls -la
+ 1165  cd tmpJGUoE
+ 1166  ls
+ 1167  clear
+ 1168  ls
+ 1169  cd ..
+ 1170  ls
+ 1171  cd ..
+ 1172  ls
+ 1173  clear
+ 1174  ls
+ 1175  rm sharedDirectory
+ 1176  mc sharedDirectory-backup-050319/ sharedDirectory
+ 1177  mv sharedDirectory-backup-050319/ sharedDirectory
+ 1178  ls
+ 1179  clear
+ 1180  ls
+ 1181  ls -la
+ 1182  cd sharedDirectory/
+ 1183  ls
+ 1184  ls -la
+ 1185  cd tmp/
+ 1186  ls
+ 1187  cd ..
+ 1188  cd /home/
+ 1189  cd /preserva/preservacion/
+ 1190  ls
+ 1191  cd archivematicaWorfFlow/
+ 1192  ls
+ 1193  cd sharedDirectory
+ 1194  ls
+ 1195  cd w
+ 1196  ls
+ 1197  cd www/
+ 1198  ls
+ 1199  cd AIPsStore/
+ 1200  ls
+ 1201  mkdir transferBacklog
+ 1202  ls
+ 1203  df -h
+ 1204  clear
+ 1205  ls
+ 1206  cd ..
+ 1207  ls
+ 1208  cd ..
+ 1209  ls
+ 1210  cd ..
+ 1211  lc
+ 1212  clear
+ 1213  ls
+ 1214  cd ..
+ 1215  ls
+ 1216  cd /var/log/
+ 1217  ls
+ 1218  cd archivematica/
+ 1219  ls
+ 1220  cd dashboard/
+ 1221  ls
+ 1222  clear
+ 1223  ls
+ 1224  cat  dashboard.log
+ 1225  lynx http://148.206.79.5:8000/api/v2/location/eec72f88-a97d-4792-8567-1e27837589e9/
+ 1226  clear
+ 1227  cd /home/
+ 1228  ls
+ 1229  cd cosei/
+ 1230  ls
+ 1231  cd Automation-tools-Archidspace-master/
+ 1232  ls
+ 1233  nano main.py 
+ 1234  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1235  clear
+ 1236  sudo su
+ 1237  clear
+ 1238  ls
+ 1239  cd Automation-tools-Archidspace-master/
+ 1240  ls
+ 1241  cd MaintenceScripts/
+ 1242  ls
+ 1243  clear
+ 1244  ls
+ 1245  cd ArchivematicaScripts/
+ 1246  ls
+ 1247  ./RestartServices.sh 
+ 1248  ls
+ 1249  ./delete-registries.sh 
+ 1250  clear
+ 1251  ls
+ 1252  cd ..
+ 1253  ls
+ 1254  cler
+ 1255  clear
+ 1256  ls
+ 1257  cd ..
+ 1258  ls
+ 1259  cd /
+ 1260  ls
+ 1261  cd preserva/
+ 1262  ls
+ 1263  cd prueba
+ 1264  ls
+ 1265  cd ..
+ 1266  ls
+ 1267  rm Prueba/
+ 1268  rm -rf Prueba/
+ 1269  clear
+ 1270  ls
+ 1271  cd A
+ 1272  cd archive-prueba/
+ 1273  ls
+ 1274  cd ..
+ 1275  ls
+ 1276  rm -rf archive-prueba/
+ 1277  ls
+ 1278  clear
+ 1279  ls
+ 1280  mkdir backup-archivematica
+ 1281  ls
+ 1282  cd /var/archivematica/
+ 1283  ls
+ 1284  cd storage-service/
+ 1285  ls
+ 1286  cd assets/
+ 1287  ls
+ 1288  cd ll
+ 1289  cd ..
+ 1290  ls
+ 1291  history
+ 1292  sqlite3 storage.db 
+ 1293  clear
+ 1294  ls
+ 1295  cd ..
+ 1296  ls
+ 1297  cd /pr
+ 1298  cd /preserva/
+ 1299  ls
+ 1300  clear
+ 1301  ls
+ 1302  cd backup-archivematica/
+ 1303  ls
+ 1304  mkdir archivematica
+ 1305  ls
+ 1306  cd archivematica/
+ 1307  ls
+ 1308  sudo rsync -av /var/archivematica .
+ 1309  clearclear
+ 1310  clear
+ 1311  ls
+ 1312  cd ..
+ 1313  ls
+ 1314  mysqldump -u root  MCP > MCP.sql
+ 1315  mysqldump -u root  -p MCP > MCP.sql
+ 1316  clear
+ 1317  ls
+ 1318  mysqldump -u root -p MCP > MCP.sql
+ 1319  clear
+ 1320  s
+ 1321  ls
+ 1322  clear
+ 1323  mysqldump -u root -p MCP > MCP.sql
+ 1324  clear
+ 1325  ls
+ 1326  histori
+ 1327  history
+ 1328  ls
+ 1329  cd archivematica/
+ 1330  ls
+ 1331  cd archivematica/
+ 1332  ls
+ 1333  cd s
+ 1334  cd storage-service/
+ 1335  ls
+ 1336  cd ..
+ 1337  ls
+ 1338  cd ..
+ 1339  ls
+ 1340  clear
+ 1341  ls
+ 1342  rsync -av /var/archivematica/storage-service/storage.db .
+ 1343  ls
+ 1344  cd /home/cosei/
+ 1345  ls
+ 1346  cd Automation-tools-Archidspace-master/
+ 1347  ls
+ 1348  nano main.py 
+ 1349  cd /preserva/
+ 1350  ls
+ 1351  cd backup-archivematica/
+ 1352  ls
+ 1353  clear
+ 1354  ls
+ 1355  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1356  cp /var/archivematica/automation-tools/dspace_retrieve.db .
+ 1357  ls
+ 1358  cp /var/archivematica/automation-tools/dspace_retrieve.db .
+ 1359  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1360  cp /usr/lib/archivematica/automation-tools/transfers/transfers.db
+ 1361  cp /usr/lib/archivematica/automation-tools/transfers/transfers.db .
+ 1362  clear
+ 1363  ls
+ 1364  ls -lg
+ 1365  ls -lh
+ 1366  clear
+ 1367  ls
+ 1368  history
+ 1369  clear
+ 1370  ls
+ 1371  clear
+ 1372  cp /etc/archivematica/automation-tools/dspace-transfer.src.conf .
+ 1373  clear
+ 1374  ls
+ 1375  sudo apt-get purge archivematica-mcp-server
+ 1376  sudo apt-get purge archivematica-mcp-client
+ 1377  systems ngix stop
+ 1378  cd /home/
+ 1379  ls
+ 1380  cd cosei/
+ 1381  ls
+ 1382  clear
+ 1383  ls
+ 1384  cd Automation-tools-Archidspace-master/
+ 1385  ls
+ 1386  cd MaintenceScripts/
+ 1387  ls
+ 1388  clear
+ 1389  ls
+ 1390  cd ArchivematicaScripts/
+ 1391  ls
+ 1392  clear
+ 1393  ls
+ 1394  nano RestartServices.sh 
+ 1395  service nginx stop
+ 1396  clear
+ 1397  sudo apt-get purge archivematica-dashboard
+ 1398  sudo apt-get purge archivematica-storage-service
+ 1399  sudo rm -rf /var/archivematica/sharedDirectory
+ 1400  sudo rm -rf /usr/lib/archivematica
+ 1401  sudo rm -rf /etc/init/archivematica*
+ 1402  sudo rm -rf /usr/share/archivematica
+ 1403  sudo apt-get autoremove
+ 1404  sudo add-apt-repository --remove ppa:archivematica/release
+ 1405  sudo add-apt-repository --remove ppa:archivematica/externals
+ 1406  sudo add-apt-repository --remove ppa:archivematica/daily
+ 1407  sudo add-apt-repository --remove ppa:archivematica/externals-dev
+ 1408  mysql -u root -p
+ 1409  shutdown -r now
+ 1410  cd /var/archivematica/
+ 1411  ls
+ 1412  cd /preserva/
+ 1413  ls
+ 1414  cd preservacion/
+ 1415  ls
+ 1416  cd dspace_preserva/
+ 1417  ls
+ 1418  cd ..
+ 1419  ls
+ 1420  cd ..
+ 1421  ls
+ 1422  clear
+ 1423  ls
+ 1424  df -h
+ 1425  clear
+ 1426  ls
+ 1427  sudo apt-get update
+ 1428  sudo apt-get upgrade
+ 1429  sudo apt-get update
+ 1430  sudo apt-key list
+ 1431  apt-key list
+ 1432  apt-key dell 4096R
+ 1433  apt-key del 5236CA08 
+ 1434  apt-key del /A13BA86F 
+ 1435  apt-key list
+ 1436  apt-key del D88E42B4
+ 1437  apt-key del 60D31954
+ 1438  clear
+ 1439  ls
+ 1440  nano /etc/apt/sources.list
+ 1441  apt-get update
+ 1442  clear
+ 1443  ls
+ 1444  shutdown -r now
+ 1445  clear
+ 1446  ls
+ 1447  history
+ 1448  ls /var/archivematica/storage-service/storage.db
+ 1449  cd /usr/lib/archivematica/archivematicaCommon/utilities
+ 1450  ls
+ 1451  cd ..
+ 1452  ls
+ 1453  clear
+ 1454  ls
+ 1455  cd /preserva/
+ 1456  ls
+ 1457  cxd preservacion/
+ 1458  ls
+ 1459  cd preservacion/
+ 1460  ls
+ 1461  cd sharedDirectory/
+ 1462  pwd
+ 1463  cd /home/cosei/
+ 1464  ls
+ 1465  clear
+ 1466  ls
+ 1467  cd Automation-tools-Archidspace-master/
+ 1468  ls
+ 1469  cd MaintenceScripts/
+ 1470  ls
+ 1471  cd DspaceScripts/
+ 1472  ls
+ 1473  cd ..
+ 1474  s
+ 1475  ls
+ 1476  cd a
+ 1477  cd ArchivematicaScripts/
+ 1478  ls
+ 1479  ./RestartServices.sh 
+ 1480  clear
+ 1481  ./RestartServices.sh 
+ 1482  clear
+ 1483  ls
+ 1484  cd ..
+ 1485  ls
+ 1486  cd ..
+ 1487  ls
+ 1488  clear
+ 1489  ls
+ 1490  cd Automation-tools-Archidspace-master/
+ 1491  ls
+ 1492  ln -s automation-tools /usr/lib/archivematica/automation-tools
+ 1493  cd /usr/lib/archivematica/
+ 1494  ls
+ 1495  ls -la
+ 1496  cd automation-tools 
+ 1497  rm automation-tools 
+ 1498  ls
+ 1499  ln -s /home/cosei/Automation-tools-Archidspace-master/automation-tools/ automation-tools
+ 1500  ls
+ 1501  ls -la
+ 1502  cd /home/cosei/
+ 1503  ls
+ 1504  cd Automation-tools-Archidspace-master/
+ 1505  ls
+ 1506  nano DspaceArchi.sh 
+ 1507  virtualenv /usr/share/python/automation-tools
+ 1508  cd  /usr/share/python/automation-tools
+ 1509  ls
+ 1510  cd /var/log/archivematica/
+ 1511  ls
+ 1512  clear
+ 1513  ls
+ 1514  mkdir automation-tools
+ 1515  ls
+ 1516  ls -la
+ 1517  chown archivematica:archivematica automation-tools/
+ 1518  ls
+ 1519  ls -la
+ 1520  mkdir /var/archivematica/automation-tools
+ 1521  cd /var/archivematica/
+ 1522  ls
+ 1523  cd automation-tools/
+ 1524  ls
+ 1525  sqlite3 dspace_retrieve.db 
+ 1526  clear
+ 1527  ls
+ 1528  cd /etc/archivematica/
+ 1529  ls
+ 1530  cd automation-tools/
+ 1531  ls
+ 1532  clear
+ 1533  ls
+ 1534  nano dspace-transfer.src.conf 
+ 1535  history
+ 1536  sqlite3 /usr/lib/archivematica/automation-tools/transfers/transfers.db
+ 1537  /usr/lib/archivematica/automation-tools/transfers/
+ 1538  ls
+ 1539  cd /usr/lib/archivematica/automation-tools/transfers/
+ 1540  ls
+ 1541  cp /preserva/backup-archivematica/transfers.db .
+ 1542  ls
+ 1543  sqlite3 transfers.db 
+ 1544  clear
+ 1545  ls
+ 1546  clear
+ 1547  ls
+ 1548  cd /home/cosei/
+ 1549  ls
+ 1550  cdlear
+ 1551  ls
+ 1552  clear
+ 1553  ls
+ 1554  cd /preserva/
+ 1555  ls
+ 1556  cd preservacion/
+ 1557  ls
+ 1558  cd dspace_ready_to_ingest/
+ 1559  ls
+ 1560  rm -rf ITEM\@11191-4147280219.zip/
+ 1561  clear
+ 1562  ls
+ 1563  cd ..
+ 1564  ls
+ 1565  cd ..
+ 1566  ls
+ 1567  cd /home/
+ 1568  ls
+ 1569  cd cosei/
+ 1570  ls
+ 1571  clear
+ 1572  ls
+ 1573  cd Automation-tools-Archidspace-master/
+ 1574  ls
+ 1575  clear
+ 1576  ls
+ 1577  cd main.py 
+ 1578  nano main.py 
+ 1579  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1580  sqlite3 /var/archivematica/automation-tools/dspace_retrieve.db
+ 1581  clear
+ 1582  ls
+ 1583  nano main.py 
+ 1584  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1585  nano main.py 
+ 1586  clear
+ 1587  ls
+ 1588  nohup ./DspaceArchi.sh &
+ 1589  clear
+ 1590  ls
+ 1591  nano nohup.out 
+ 1592  clear
+ 1593  ls
+ 1594  ls -lh
+ 1595  ls
+ 1596  cd MaintenceScripts/
+ 1597  ls
+ 1598  cd ArchivematicaScripts/
+ 1599  ls
+ 1600  ./RestartServices.sh 
+ 1601  clear
+ 1602  ls
+ 1603  cd ..
+ 1604  ls
+ 1605  vi nohup.out 
+ 1606  clear
+ 1607  ls
+ 1608  rm nohup.out 
+ 1609  ls
+ 1610  cls
+ 1611  clear
+ 1612  ls
+ 1613  nano main.py 
+ 1614  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1615  sqlite3 /var/archivematica/automation-tools/dspace_retrieve.db
+ 1616  nano /etc/archivematica/automation-tools/dspace-transfer.src.conf
+ 1617  sqlite3 /usr/lib/archivematica/automation-tools/transfers/transfers.db
+ 1618  cd /preserva/
+ 1619  ls
+ 1620  cd preservacion/ls
+ 1621  cd preservacion/
+ 1622  ls
+ 1623  cd dspace_ready_to_ingest/
+ 1624  ls
+ 1625  rm -rf ITEM\@11191-4147280219.zip/
+ 1626  clear
+ 1627  ls
+ 1628  ld
+ 1629  ls
+ 1630  cd /home/cosei/
+ 1631  ls
+ 1632  cd Automation-tools-Archidspace-master/
+ 1633  ls
+ 1634  nano main.py 
+ 1635  nohup ./DspaceArchi.sh &
+ 1636  nano nohup.out 
+ 1637  clear
+ 1638  ls
+ 1639  cat nohup.out 
+ 1640  cd /var/
+ 1641  ls
+ 1642  cd log
+ 1643  ls
+ 1644  cd archivematica/
+ 1645  ls
+ 1646  cd automation-tools/
+ 1647  ls
+ 1648  cd ..
+ 1649  ls
+ 1650  cd dashboard/
+ 1651  ls
+ 1652  cat dashboard.log 
+ 1653  /var/archivematica/sharedDirectory/tmp/tmpty1OnB
+ 1654  ls
+ 1655  vlear
+ 1656  ls
+ 1657  clear
+ 1658  ls
+ 1659  cd /var/archivematica/
+ 1660  ls
+ 1661  cd sharedDirectory/
+ 1662  ls
+ 1663  cd tmp/
+ 1664  ls
+ 1665  cd tmpEc9n5G/
+ 1666  ls
+ 1667  rm ITEM\@11191-4147280219.zip/
+ 1668  cd ..
+ 1669  ls
+ 1670  history
+ 1671  clear
+ 1672  ls
+ 1673  rm -rf *
+ 1674  ls
+ 1675  cd ..
+ 1676  ls
+ 1677  ls -la
+ 1678  ls -la /preserva/preservacion/sharedDirectory/
+ 1679  chmod -R g+s *
+ 1680  ls
+ 1681  ls -la
+ 1682  clear
+ 1683  cd /preserva/preservacion/
+ 1684  pwd
+ 1685  cd /preserva/preservacion/sharedDirectory/www/AIPsStore/transferBacklog/
+ 1686  ls
+ 1687  ls -la
+ 1688  cd ..
+ 1689  ls
+ 1690  cd ..
+ 1691  ls
+ 1692  cd ..
+ 1693  ls
+ 1694  ls -la
+ 1695  cd ..
+ 1696  ls
+ 1697  ls -la
+ 1698  cd sharedDirectory/
+ 1699  ls
+ 1700  ls -la
+ 1701  chmod -R g+s *
+ 1702  LS
+ 1703  ls -la
+ 1704  clear
+ 1705  ls
+ 1706  ls -la
+ 1707  clear
+ 1708  ls
+ 1709  cd /preserva/preservacion/sharedDirectory/watchedDirectories/workFlowDecisions/extractPackagesChoice
+ 1710  ls
+ 1711  cd ITEM_11191-4147280219.zip-f6c3c6a6-fb33-4a72-b7ca-adf0efdd73a6/
+ 1712  ls
+ 1713  ls -la
+ 1714  cd objects/
+ 1715  ls
+ 1716  ls -la
+ 1717  ls -lh
+ 1718  cd ITEM_11191-4147280219.zip/
+ 1719  ls
+ 1720  ls -la
+ 1721  cd ITEM_11191-4147280219.zip-2019-03-19T21_43_05.613284_00_00/
+ 1722  ls
+ 1723  clear
+ 1724  ls
+ 1725  cd bitstream_00d76067-8515-45c4-aaa1-f3fe2198ce28-2019-03-19T21\:45\:49.699944+00\:00/
+ 1726  ls
+ 1727  cd Sesion_394_Disco_1_Premio_a_las_Areas_de_Investigacion_2015/
+ 1728  ls
+ 1729  cd PREMIO\ A\ LAS\ µREAS\ DE\ INVESTIGACION/
+ 1730  ls
+ 1731  cd ARCHIVOS\ INFORME\ COMISIàN\ PAI\ 2015/
+ 1732  ls
+ 1733  cd ..
+ 1734  clear
+ 1735  exit
+ 1736  clear
+ 1737  ls
+ 1738  sudo wget -O - https://packages.archivematica.org/1.6.x/key.asc | sudo apt-key add -
+ 1739  sudo sh -c 'echo "deb [arch=amd64] http://packages.archivematica.org/1.6.x/ubuntu xenial main" >> /etc/apt/sources.list'
+ 1740  sudo sh -c 'echo "deb [arch=amd64] http://packages.archivematica.org/1.6.x/ubuntu-externals xenial main" >> /etc/apt/sources.list'
+ 1741  sudo wget -O - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
+ 1742  sudo sh -c 'echo "deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main" >> /etc/apt/sources.list'
+ 1743  apt-key list
+ 1744  sudo apt-get update
+ 1745  sudo apt-get install elasticsearch
+ 1746  sudo apt-get install -y archivematica-storage-service
+ 1747  clear
+ 1748  sudo rm -f /etc/nginx/sites-enabled/default
+ 1749  sudo ln -s /etc/nginx/sites-available/storage /etc/nginx/sites-enabled/storage
+ 1750  sudo wget https://bootstrap.pypa.io/get-pip.py
+ 1751  sudo python get-pip.py
+ 1752  sudo apt-get install -y archivematica-mcp-server
+ 1753  clear
+ 1754  sudo apt-get install -y archivematica-dashboard
+ 1755  sudo apt-get install -y archivematica-mcp-client
+ 1756  sudo ln -s /etc/nginx/sites-available/dashboard.conf /etc/nginx/sites-enabled/dashboard.conf
+ 1757  rm -s /etc/nginx/sites-enabled/dashboard.conf
+ 1758  rm /etc/nginx/sites-enabled/dashboard.conf
+ 1759  ls
+ 1760  sudo service elasticsearch restart
+ 1761  sudo update-rc.d elasticsearch defaults 95 10
+ 1762  sudo freshclam
+ 1763  sudo vim /etc/archivematica/archivematicaCommon/dbsettings
+ 1764  sudo dpkg-reconfigure archivematica-dashboard
+ 1765  mysql -h localhost -u archivematica -p 
+ 1766  clear
+ 1767  ls -l /var/log/clamav/
+ 1768  sudo lsof /var/log/clamav/freshclam.log
+ 1769  sudo /etc/init.d/clamav-freshclam stop
+ 1770  sudo freshclam
+ 1771  sudo /etc/init.d/clamav-freshclam start
+ 1772  sudo service gearman-job-server restart
+ 1773  sudo service archivematica-mcp-server start
+ 1774  sudo service archivematica-mcp-client start
+ 1775  sudo service archivematica-storage-service start
+ 1776  sudo service archivematica-dashboard start
+ 1777  sudo service nginx restart
+ 1778  sudo service fits start
+ 1779  sudo ufw status
+ 1780  sudo ufw start
+ 1781  clear
+ 1782  cd /preserva/
+ 1783  ls
+ 1784  cd preservacion/
+ 1785  ls
+ 1786  cd archivematicaWorfFlow/
+ 1787  ls
+ 1788  cd ..
+ 1789  ls
+ 1790  rm archivematicaWorfFlow/
+ 1791  rm -rf archivematicaWorfFlow/
+ 1792  nano /etc/archivematica/MCPServer/serverConfig.conf
+ 1793  clear
+ 1794  ls
+ 1795  clear
+ 1796  ls
+ 1797  mkdir sharedDirectory
+ 1798  ls
+ 1799  history
+ 1800  rsync -av /var/archivematica/sharedDirectory/ sharedDirectory/
+ 1801  clearls
+ 1802  clear
+ 1803  ls
+ 1804  cd sharedDirectory/
+ 1805  ls
+ 1806  clear
+ 1807  ls
+ 1808  cd www/
+ 1809  ls
+ 1810  cd AIPsStore/
+ 1811  pwd
+ 1812  df -h
+ 1813  clear
+ 1814  ls
+ 1815  pwd
+ 1816  cd ..
+ 1817  ls
+ 1818  pwd
+ 1819  clear
+ 1820  ls
+ 1821  cd /home/
+ 1822  ls
+ 1823  cd cosei/
+ 1824  ls
+ 1825  cd Automation-tools-Archidspace-master/
+ 1826  ls
+ 1827  clear
+ 1828  ls
+ 1829  cd transfer-source-helpers/
+ 1830  ls
+ 1831  clear
+ 1832  ls
+ 1833  cd ..
+ 1834  ls
+ 1835  cd MaintenceScripts/
+ 1836  ls
+ 1837  cd ArchivematicaScripts/
+ 1838  ls
+ 1839  nano RestartServices.sh 
+ 1840  nano StopServices.sh
+ 1841  ls
+ 1842  chown +x StopServices.sh 
+ 1843  clear
+ 1844  chmod +x StopServices.sh 
+ 1845  clear
+ 1846  ls
+ 1847  ./StopServices.sh 
+ 1848  cd /preserva/preservacion/
+ 1849  ls
+ 1850  cd sharedDirectory/
+ 1851  ls
+ 1852  pwd
+ 1853  history
+ 1854  nano /etc/archivematica/MCPServer/serverConfig.conf
+ 1855  pwd
+ 1856  nano /etc/archivematica/MCPServer/serverConfig.conf
+ 1857  clear
+ 1858  ls
+ 1859  cd /home/cosei/
+ 1860  ls
+ 1861  cd Automation-tools-Archidspace-master/
+ 1862  ls
+ 1863  cd MaintenceScripts/
+ 1864  ls
+ 1865  cd ArchivematicaScripts/
+ 1866  ls
+ 1867  clear
+ 1868  ls
+ 1869  ./RestartServices.sh 
+ 1870  cd /var/log
+ 1871  ls
+ 1872  cd archivematica/
+ 1873  ls
+ 1874  cd dashboard/
+ 1875  ls
+ 1876  vi dashboard.log 
+ 1877  mysql -u archivematica -p
+ 1878  vi dashboard.log 
+ 1879  mysql -u archivematica -p
+ 1880  clear
+ 1881  ls
+ 1882  history
+ 1883  nano /etc/archivematica/MCPServer/serverConfig.conf
+ 1884  clear
+ 1885  ls
+ 1886  history
+ 1887  ls
+ 1888  cd /etc/archivematica/
+ 1889  clear
+ 1890  ls
+ 1891  cd MCPClient/
+ 1892  ls
+ 1893  nano clientConfig.conf 
+ 1894  clear
+ 1895  ls
+ 1896  cd /preserva/
+ 1897  ls
+ 1898  cd backup-archivematica/
+ 1899  ls
+ 1900  clear
+ 1901  ls
+ 1902  clear
+ 1903  ls
+ 1904  cd /var/archivematica/storage-service/
+ 1905  ls
+ 1906  ls -la
+ 1907  cp /preserva/backup-archivematica/storage.db .
+ 1908  ls -lh
+ 1909  clear
+ 1910  cd /home/cosei/
+ 1911  ls
+ 1912  clear
+ 1913  ls
+ 1914  cd Automation-tools-Archidspace-master/
+ 1915  ls
+ 1916  cd automation-tools/ls
+ 1917  cd automation-tools/
+ 1918  ls
+ 1919  clear
+ 1920  ls
+ 1921  cd ..
+ 1922  ls
+ 1923  cd transfer-source-helpers/
+ 1924  ls
+ 1925  cd ..
+ 1926  ls
+ 1927  nano main.py 
+ 1928  clear
+ 1929  le
+ 1930  ls
+ 1931  clear
+ 1932  cd ..
+ 1933  ls
+ 1934  cd Automation-tools-Archidspace-master/
+ 1935  ls
+ 1936  nohup ./DspaceArchi.sh &
+ 1937  nano nohup.out 
+ 1938  clear
+ 1939  ls
+ 1940  cd/preserva/preservacion/sharedDirectory/tmp/tmpty1OnB
+ 1941  cd  /preserva/preservacion/sharedDirectory/tmp/tmpty1OnB
+ 1942  ls
+ 1943  ls -la
+ 1944  cd ..
+ 1945  ls
+ 1946  cd .s
+ 1947  ls -la
+ 1948  cd ..
+ 1949  ls
+ 1950  cd /home/
+ 1951  ls
+ 1952  cd cosei/
+ 1953  ls
+ 1954  cd Automation-tools-Archidspace-master/
+ 1955  ls
+ 1956  cd MaintenceScripts/
+ 1957  ls
+ 1958  cd ArchivematicaScripts/
+ 1959  ls
+ 1960  clear
+ 1961  ls
+ 1962  ./RestartServices.sh 
+ 1963  clear
+ 1964  ls
+ 1965  cd /var/log
+ 1966  ls
+ 1967  cd archivematica/
+ 1968  ls
+ 1969  cd dashboard/
+ 1970  ls
+ 1971  vi dashboard.log 
+ 1972  clear
+ 1973  ls
+ 1974  nano dashboard.log 
+ 1975  vi dashboard.log 
+ 1976  clear
+ 1977  ls
+ 1978  exit
+ 1979  nano /etc/archivematica/MCPClient/clientConfig.conf
+ 1980  clear
+ 1981  clear
+ 1982  cd /home/cosei/
+ 1983  ls
+ 1984  cd Automation-tools-Archidspace-master/
+ 1985  ls
+ 1986  clear
+ 1987  ls
+ 1988  cd MaintenceScripts/
+ 1989  ls
+ 1990  cd ArchivematicaScripts/
+ 1991  ls
+ 1992  ./RestartServices.sh 
+ 1993  clear
+ 1994  ls
+ 1995  cd Automation-tools-Archidspace-master/
+ 1996  ls
+ 1997  nohup DspaceArchi.sh &
+ 1998  nohup ./DspaceArchi.sh &
+ 1999  clear
+ 2000  exit
+ 2001  clear
+ 2002  ls
+ 2003  crontab -e
+ 2004  cd Automation-tools-Archidspace-master/
+ 2005  ls
+ 2006  vi nohup.out 
+ 2007  clear
+ 2008  ls
+ 2009  cd transfer-source-helpers/
+ 2010  ls
+ 2011  cd cd ..
+ 2012  ls
+ 2013  cd ..
+ 2014  clear
+ 2015  ls
+ 2016  cd MaintenceScripts/
+ 2017  ls
+ 2018  cd ArchivematicaScripts/
+ 2019  clear
+ 2020  ls
+ 2021  ./delete-registries.sh 
+ 2022  nano delete-registries.sh 
+ 2023  clear
+ 2024  ls
+ 2025  cd ..
+ 2026  cd ArchivematicaScripts/
+ 2027  ls
+ 2028  ./delete-registries.sh 
+ 2029  clear
+ 2030  ls
+ 2031  clear
+ 2032  ls
+ 2033  hisory
+ 2034  clear
+ 2035  history
+ 2036  history > comandosArchivematica.txt
